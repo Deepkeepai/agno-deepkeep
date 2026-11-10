@@ -1,5 +1,11 @@
 # agno-deepkeep
 
+> **Development moved:** This integration is maintained in the
+> [DeepKeep integrations monorepo](https://github.com/Deepkeepai/deepkeep-integrations/tree/main/integrations/agno).
+> Please open new [issues](https://github.com/Deepkeepai/deepkeep-integrations/issues) and pull requests in the monorepo.
+> Historical source and existing links remain available here.
+> The PyPI package name remains `agno-deepkeep`.
+
 DeepKeep AI Firewall custom guardrails for Agno.
 
 This package follows Agno's native guardrail extension point. Add `DeepKeepGuardrail` to an Agent or Team with `pre_hooks` to check input before it reaches the model, or with `post_hooks` to check output before it is returned.
@@ -103,6 +109,11 @@ If DeepKeep returns an unsupported action, the guardrail fails closed.
 - `fail_closed`: Raise a guardrail error when DeepKeep cannot be reached. Defaults to `True`.
 
 ## Recommended Agno docs positioning
+
+The official cookbook example was accepted in
+[PR #9784](https://github.com/agno-agi/agno/pull/9784). The separate overview
+proposal [PR #760](https://github.com/agno-agi/docs/pull/760) remains open; it is
+not an accepted overview listing. The positioning below is retained for reference.
 
 Position the public integration as DeepKeep AI Firewall in Agno's custom guardrails area:
 
